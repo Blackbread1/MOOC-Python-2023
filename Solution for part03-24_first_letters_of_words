@@ -1,0 +1,11 @@
+sentence = input("Please type in a sentence:")
+
+index = 0
+
+while index < len(sentence):
+    if sentence[index] != " ":
+        print(sentence[index])
+    space = sentence[index:].find(" ")
+    if space == -1:
+        break
+    index = index + space + 1
